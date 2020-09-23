@@ -7,7 +7,7 @@ class User < ApplicationRecord
 
     has_secure_password :validations => false
     
-    validates :username, presence: true
+    validates :username, :name, presence: true
     validates :email, presence: true
     validates :password, presence: { message: "Password is required!"}
     validates :username, :email, uniqueness: { message: "%{attribute} must be unique, %{value} has already been taken."}

@@ -16,9 +16,10 @@ class UsersController < ApplicationController
 
         if @user.valid?
             @user.save
-            render json: @user
+            @token = JWT.encode({user_id: @user.id}, Rails.application.secrets.secret_key_base[0])
+            render json: { user: @user, token: @token }
         else
-            render json: { errors: @user.errors.messages}
+            render json: { errors: @user.errors.messages }
         end
         
     end
@@ -26,7 +27,7 @@ class UsersController < ApplicationController
     def update
         @user = User.find(params[:id])
         @user.update(user_params)
-        render json: @user    
+        render json: @user
     end
 
     def login
@@ -36,7 +37,7 @@ class UsersController < ApplicationController
             @token = JWT.encode({user_id: @user.id}, Rails.application.secrets.secret_key_base[0])
             render json: {user: @user, token: @token}
         else
-            render json: { message: "Invalid username or password, please try again!" }
+            render json: { errors: "Invalid username or password, please try again!" }
         end
     end
 
