@@ -28,6 +28,6 @@ rm_array["routes"].map do |route|
         difficulty: route["rating"],
         pitches: route["pitches"].to_s,
         location: route["location"],
-        url: route["url"]
+        url: route["imgSmallMed"]
     )   
 end

@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
 
+    skip_before_action :authorized, only: [:index, :create, :login]
 
     def index
         @users = User.all
@@ -8,6 +9,10 @@ class UsersController < ApplicationController
 
     def show
         @user = User.find(params[:id])
+        render json: @user
+    end
+
+    def profile
         render json: @user
     end
 
@@ -44,7 +49,7 @@ class UsersController < ApplicationController
     private 
 
     def user_params
-    params.require(:user).permit(:username, :email, :password, :name, :climbing_skill, :aboutme)
+    params.require(:user).permit(:username, :email, :password, :name, :climbing_skill, :climbing_style, :aboutme)
     end
 
 

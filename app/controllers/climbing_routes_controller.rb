@@ -1,11 +1,12 @@
 class ClimbingRoutesController < ApplicationController
 
+    skip_before_action :authorized, only: [:index, :create]
+
     def index
         @routes = ClimbingRoute.all
         render json: ClimbingRouteSerializer.new(@routes)
     end
 
-    
     def create
         @route = ClimbingRoute.new(climbing_route_params)
       
