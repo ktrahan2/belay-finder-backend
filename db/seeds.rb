@@ -27,7 +27,7 @@ rm_array["routes"].map do |route|
         style: route["type"],
         difficulty: route["rating"],
         pitches: route["pitches"].to_s,
-        location: route["location"],
+        location: route["location"][1],
         url: route["imgSmallMed"]
     )   
 end

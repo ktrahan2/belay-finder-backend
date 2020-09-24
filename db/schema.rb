@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_22_215838) do
+ActiveRecord::Schema.define(version: 2020_09_23_230737) do
 
   create_table "climbing_routes", force: :cascade do |t|
     t.string "name"
@@ -50,6 +50,8 @@ ActiveRecord::Schema.define(version: 2020_09_22_215838) do
     t.text "aboutme"
     t.string "climbing_skill"
     t.string "climbing_style"
+    t.text "location"
+    t.string "status", default: "unavailable"
   end
 
 end

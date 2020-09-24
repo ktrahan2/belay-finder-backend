@@ -7,13 +7,8 @@ class UsersController < ApplicationController
         render json: UserSerializer.new(@users)
     end
 
-    def show
-        @user = User.find(params[:id])
-        render json: @user
-    end
-
     def profile
-        render json: @user
+        render json: UserSerializer.new(@user)
     end
 
     def create
