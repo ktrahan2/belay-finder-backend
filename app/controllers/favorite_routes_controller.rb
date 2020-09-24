@@ -1,8 +1,15 @@
 class FavoriteRoutesController < ApplicationController
 
+    skip_before_action :authorized, only: [:index, :show]
+
     def index
         @favorite_routes = FavoriteRoute.all
         render json: FavoriteRouteSerializer.new(@favorite_routes)
+    end
+
+    def show
+        @favorite_route = FavoriteRoute.find(params[:id])
+        render json: FavoriteRouteSerializer.new(@favorite_route)
     end
 
     def create
@@ -15,6 +22,14 @@ class FavoriteRoutesController < ApplicationController
             render json: { errors: @favorite_route.errors.messages}
         end
     end
+
+    def destroy
+        @favorite_route = FavoriteRoute.find(params[:id])
+        @favorite_route.destroy
+
+        render json: {message: `#{@favorite_route} deleted`}
+    end
+
 
     private
 
