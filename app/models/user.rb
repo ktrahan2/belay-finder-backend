@@ -9,11 +9,7 @@ class User < ApplicationRecord
     
     validates :username, :name, presence: true
     validates :email, presence: true
-    validates :password, presence: { message: "Password is required!"}
+    validates :password_digest, presence: { message: "Password is required!"}
     validates :username, :email, uniqueness: { message: "%{attribute} must be unique, %{value} has already been taken."}
-    validates :password, length: {
-        minimum: 6,
-        maximum: 15,
-        message: "Password length must be between 6 and 15 characters."
-    }
+    
 end

@@ -51,7 +51,7 @@ ActiveRecord::Schema.define(version: 2020_09_23_230737) do
     t.string "climbing_skill"
     t.string "climbing_style"
     t.text "location"
-    t.string "status", default: "unavailable"
+    t.string "belay_status", default: "unavailable"
   end
 
 end
