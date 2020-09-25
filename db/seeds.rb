@@ -11,7 +11,7 @@ User.destroy_all
 kyle = User.create(username: "ktrain", email: "ktrahan2@gmail.com", password: "1234567", name: "kyle trahan", aboutme: "I love to climb derp derps", climbing_skill: '5.9')
 nate = User.create(username: "npalmore", email: "thisisnoteral@gmail.com", password: "1234567", name: "nate palmore", aboutme: "I climb so gud", climbing_skill: '5.10')
 
-Partnership.create(requestor_id: kyle.id, receiver_id: nate.id, status: 'pending')
+Partnership.create(requestor_id: kyle.id, receiver_id: nate.id, partnership_status: 'pending')
 
 require 'rest-client'
 
