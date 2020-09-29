@@ -44,6 +44,13 @@ class UsersController < ApplicationController
         end
     end
 
+    def destroy
+        @user = User.find(params[:id])
+        @user.destroy
+        
+        render json: { messages: "User terminated" }
+    end
+
     private 
 
     def user_params
