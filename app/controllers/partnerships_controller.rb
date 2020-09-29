@@ -22,6 +22,11 @@ class PartnershipsController < ApplicationController
         end
     end
 
+    def update 
+        @partnership = Partnership.find(params[:id])
+        @partnership.update(partnership_params)
+        render json: @partnership
+    end
     def destroy
         @partnership = Partnership.find(params[:id])
         @partnership.destroy
