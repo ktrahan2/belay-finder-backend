@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_22_215838) do
+ActiveRecord::Schema.define(version: 2020_09_25_145820) do
 
   create_table "climbing_routes", force: :cascade do |t|
     t.string "name"
@@ -37,7 +37,7 @@ ActiveRecord::Schema.define(version: 2020_09_22_215838) do
     t.integer "receiver_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "status", default: "pending"
+    t.string "partnership_status", default: "pending"
   end
 
   create_table "users", force: :cascade do |t|
@@ -50,6 +50,8 @@ ActiveRecord::Schema.define(version: 2020_09_22_215838) do
     t.text "aboutme"
     t.string "climbing_skill"
     t.string "climbing_style"
+    t.text "location"
+    t.string "belay_status", default: "unavailable"
   end
 
 end

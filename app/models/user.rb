@@ -5,15 +5,11 @@ class User < ApplicationRecord
     has_many :favorite_routes
     has_many :climbing_routes, through: :favorite_routes
 
-    has_secure_password
+    has_secure_password :validations => false
     
-    validates :username, presence: true
-    validates :email, presence: true
-    validates :password_digest, presence: { message: "%{attribute} is required!"}
+    validates :username, :name, :email, presence: { message: "%{attribute} is required!"}
+    
+    validates :password_digest, presence: { message: "Password is required!"}
     validates :username, :email, uniqueness: { message: "%{attribute} must be unique, %{value} has already been taken."}
-    # validates :password_digest, length: {
-    #     minimum: 6,
-    #     maximum: 15,
-    #     message: "Password length must be between 6 and 15 characters."
-    # }
+    
 end
