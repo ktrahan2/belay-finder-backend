@@ -19,16 +19,12 @@ Belay Land is an application that allows users to search through climbing routes
 
 ## How It Works
 
-### Create New User or Login
-
 ## Example Code 
-
 
 ## Technology Used
 
-- SQLite
 -Ruby on Rails
-
+- SQLite
 
 ## Setting up for the application
 
@@ -65,7 +61,7 @@ then
 
 [Kyle Trahan](https://www.linkedin.com/in/kyle-trahan-8384678b/)
 
-## Link to Backend Repo
+## Link to Frontend Repo
 
-
+https://github.com/ktrahan2/belay-finder-frontend
 
