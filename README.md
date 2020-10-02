@@ -34,15 +34,21 @@ Belay Land is an application that allows users to search through climbing routes
 
 To begin first run 
     
-    ```rails db:migrate``` 
+```
+    rails db:migrate
+``` 
 
 and
 
-    ```rails db:seed```
+```
+    rails db:seed
+```
     
 then 
     
-    ```rails s```
+```
+    rails s
+```
 
 ## Main Features
 
