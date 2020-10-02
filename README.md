@@ -21,6 +21,19 @@ Belay Land is an application that allows users to search through climbing routes
 
 ## Example Code 
 
+```
+     def login
+        @user = User.find_by(username: params[:username])
+        
+        if @user && @user.authenticate(params[:password])
+            @token = JWT.encode({user_id: @user.id}, Rails.application.secrets.secret_key_base[0])
+            render json: {user: @user, token: @token}
+        else
+            render json: { errors: "Invalid username or password, please try again!" }
+        end
+    end
+```
+
 ## Technology Used
 
 -Ruby on Rails
