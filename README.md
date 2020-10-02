@@ -21,44 +21,6 @@ Belay Land is an application that allows users to search through climbing routes
 
 ### Create New User or Login
 
-
-![Login](https://media.giphy.com/media/hX7pcFkSSHwT9nsObT/giphy.gif)
-
-
-### Start With Some Standard Packing Lists
-
-
-![Home Page](https://media.giphy.com/media/Q99AHMSoxXrwadb6Yb/giphy.gif)
-
-### Create a New Pack
-
-![New List](https://media.giphy.com/media/ZF9KU0qiw74lYTBbOi/giphy.gif)
-
-
-### View Your Profile and All Your Packs
-
-
-![Profile](https://media.giphy.com/media/lQIVg9DUVMQRHO2PJY/giphy.gif)
-
-
-### Remove An Item from Pack
-
-
-![Delete Item](https://media.giphy.com/media/hSdgAjIioAIpUZGjd7/giphy.gif)
-
-
-### Remove Entire Packing List
-
-
-![Remove Pack](https://media.giphy.com/media/cKcUuYtxSpSepXTEI9/giphy.gif)
-
-### Sign Out
-
-
-![SignOut](https://media.giphy.com/media/J3FoUUkjwaC06gMAhg/giphy.gif)
-
-
-
 ## Example Code 
 
 
