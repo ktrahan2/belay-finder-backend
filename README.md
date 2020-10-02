@@ -3,15 +3,15 @@
 An app for finding climbing routes and connecting with other climbers. 
 
 # Table Of Contents 
-- [Description](https://github.com/sbrook13/packlist-frontend#description)
-- [How It Works (gifs)](https://github.com/sbrook13/packlist-frontend#howitworks)
-- [Example Code](https://github.com/sbrook13/packlist-frontend#example-code)
-- [Technology Used](https://github.com/sbrook13/packlist-frontend#technology-used)
-- [Setting up for the Application](https://github.com/sbrook13/packlist-frontend#setting-up-for-the-application)
-- [Main Features](https://github.com/sbrook13/packlist-frontend#main-features)
-- [Features in Progress](https://github.com/sbrook13/packlist-frontend#features-in-progress)
-- [Contact Information](https://github.com/sbrook13/packlist-frontend#contact-information)
-- [Link to Backend Repo](https://github.com/sbrook13/packlist-frontend#link-to-backend-repo)
+- [Description](https://github.com/ktrahan2/belay-finder-backend#description)
+- [How It Works (gifs)](https://github.com/ktrahan2/belay-finder-backend#howitworks)
+- [Example Code](https://github.com/ktrahan2/belay-finder-backend#example-code)
+- [Technology Used](https://github.com/ktrahan2/belay-finder-backend#technology-used)
+- [Setting up for the Application](https://github.com/ktrahan2/belay-finder-backend#setting-up-for-the-application)
+- [Main Features](https://github.com/ktrahan2/belay-finder-backend#main-features)
+- [Features in Progress](https://github.com/ktrahan2/belay-finder-backend#features-in-progress)
+- [Contact Information](https://github.com/ktrahan2/belay-finder-backend#contact-information)
+- [Link to Backend Repo](https://github.com/ktrahan2/belay-finder-backend#link-to-backend-repo)
 
 ## Description
 
