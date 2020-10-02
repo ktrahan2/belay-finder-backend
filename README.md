@@ -94,9 +94,8 @@ then
 
 ## Main Features
 
-- User can register/sign in
-- User can find climbing routes and add them to their favorites
-- User can friend other users in order to form climbing partnerships
+- Seeding climbing route data from an API
+- Self-referential many to many relationship between users
 
 ## Features in Progress
 
