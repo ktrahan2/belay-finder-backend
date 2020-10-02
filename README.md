@@ -69,7 +69,7 @@ Belay Land is an application that allows users to search through climbing routes
 
 ## Technology Used
 
--Ruby on Rails
+- Ruby on Rails
 - SQLite
 
 ## Setting up for the application
